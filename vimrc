@@ -22,6 +22,9 @@ Plugin 'VundleVim/Vundle.vim'
 " the dark minimalist theme
 Plugin 'dikiaap/minimalist'
 
+" the one dark theme
+Plugin 'joshdick/onedark.vim'
+
 " Highlight the Insert and Virtual modes
 Plugin 'itchyny/lightline.vim'
 
