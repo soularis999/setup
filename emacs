@@ -1,5 +1,5 @@
-(setq user-full-name "Dmitriy Khomitskiy"
-      user-mail-address "dmitriy@khomitskiy.com")
+(setq user-full-name "<<replace>>"
+      user-mail-address "<<ereplace>>")
 
 ;; These functions are useful. Activate them.
 (put 'downcase-region 'disabled nil)
