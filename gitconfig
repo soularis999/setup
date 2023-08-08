@@ -1,7 +1,7 @@
 
 [user]
-        email = dmitriy@khomitskiy.com
-        name = Dmitriy Khomitskiy
+        email = <<replace>>
+        name = <<replace>>
 [core]
         autocrlf = input
 [alias]
