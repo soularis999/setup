@@ -68,7 +68,10 @@ Install the theme using your Vim plug-in manager of choice (or manually, by plac
 
 8. Install asdf for software management
 
-`brew install coreutils curl git`
+```
+brew install coreutils curl git
+brew install asdf
+```
 
 9. Install docker
 
