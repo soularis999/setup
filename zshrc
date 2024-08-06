@@ -5,19 +5,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="dst"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git gitfast brew tmux asdf docker docker-compose vi-mode iterm2 rust themes)
 
 # User configuration
@@ -34,7 +28,7 @@ else
    export EDITOR='nvim'
 fi
 
-# Enable neovim true color support
+# enable neovim true color support
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 alias edit='nvim'
@@ -90,15 +84,16 @@ alias md5sum='/sbin/md5 -r'
 ################### Fuzzy search #####################
 [ -f ~/.fzf.zsh ] && source <(fzf --zsh)
 
-################### RUST #############################
-[ -f ~/.cargo/env ] && source ~/.cargo/env
-
 ################### ASDF #############################
 [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] &&
 	. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-################### PowelLevel10k ####################
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+################### RUST #############################
+[ -f ~/.cargo/env ] && source ~/.cargo/env
+
+
+################### powerlevel 10k ###################
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

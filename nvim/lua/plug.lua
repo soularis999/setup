@@ -45,6 +45,9 @@ local plugins = {
     "tpope/vim-commentary",
     'voldikss/vim-floaterm',
     "nvim-treesitter/nvim-treesitter",
+    "numToStr/Comment.nvim",
+    "folke/todo-comments.nvim",
+    "folke/trouble.nvim",
 
     -- programming
     "williamboman/mason.nvim", -- managed LSP server

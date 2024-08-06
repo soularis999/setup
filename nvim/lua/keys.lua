@@ -18,11 +18,11 @@ map('n', '<C-l>', ':wincmd l<CR>', {})
 map('n', '<leader>h', ':nohlsearch<CR>', {})
 
 -- nvim-tree
-map('n', '<C-o>', ':NvimTreeFindFile<CR>', {})
-map('n', '<C-c>', ':NvimTreeClose<CR>', {})
+map('n', '<C-p>', ':NvimTreeFindFile<CR>', {})
+map('n', '<C-z>', ':NvimTreeClose<CR>', {})
 
 -- indent
-map('n', 'l', [[:IndentLinesToggle]], {})
-map('n', 't', [[:TagbarToggle]], {})
+map('n', 'C-L', [[:IndentLinesToggle]], {})
+map('n', 'C-T', [[:TagbarToggle]], {})
 
-
+map("v", "<leader>y", '"+y', {})
